@@ -8,5 +8,7 @@ How to play:
 
 Credits:
 shit icon - Icon made by https://www.flaticon.com/authors/pixel-perfect
+
 player icon - http://opengameart.org/content/tiny-16-basic by http://opengameart.org/users/sharm
+
 Zenva for the useful video tutorials at https://gamedevacademy.org/js13kgames-tutorial-video-series/
