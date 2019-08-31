@@ -100,10 +100,10 @@ kontra.loadAssets('background.png', 'enemy.png', 'player.png').then(
 
     var loop = kontra.gameLoop({
       update: function() {
+
         if(kontra.keys.pressed('left')) {
           player.x -= 1.5;
         }
-
         if(kontra.keys.pressed('right')) {
           player.x += 1.5;
         }
@@ -133,7 +133,7 @@ kontra.loadAssets('background.png', 'enemy.png', 'player.png').then(
           //check for collision
           if(enemy.collidesWith(player)) {
             loop.stop();
-            alert('GAME OVER. YOU GOT HIT BY SHIT.');
+            alert('You suck. Restart?');
             window.location = '';
           }
         });
