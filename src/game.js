@@ -2,7 +2,7 @@ kontra.init();
 
 kontra.assetPaths.images = 'assets/images/';
 
-kontra.loadAssets('background.png', 'enemy.png', 'player.png').then(
+kontra.loadAssets('background.png', 'shit.png', 'player.png').then(
   function(){
     var background = kontra.sprite({
       x: 0,
@@ -16,83 +16,83 @@ kontra.loadAssets('background.png', 'enemy.png', 'player.png').then(
       image: kontra.images.player
     });
 
-    var enemies = [
+    var shits = [
       kontra.sprite({
-        x: Math.random() * 256,
+        x: Math.random() * 240,
         y: 0,
-        image: kontra.images.enemy,
+        image: kontra.images.shit,
         dy: 1.1
       }),
       kontra.sprite({
-        x: Math.random() * 256,
+        x: Math.random() * 240,
         y: 0,
-        image: kontra.images.enemy,
+        image: kontra.images.shit,
         dy: 1.2
       }),
       kontra.sprite({
-        x: Math.random() * 256,
+        x: Math.random() * 240,
         y: 0,
-        image: kontra.images.enemy,
+        image: kontra.images.shit,
         dy: 1.3
       }),
       kontra.sprite({
-        x: Math.random() * 256,
+        x: Math.random() * 240,
         y: 0,
-        image: kontra.images.enemy,
+        image: kontra.images.shit,
         dy: 1.4
       }),
       kontra.sprite({
-        x: Math.random() * 256,
+        x: Math.random() * 240,
         y: 0,
-        image: kontra.images.enemy,
+        image: kontra.images.shit,
         dy: 1.5
       }),
       kontra.sprite({
-        x: Math.random() * 256,
+        x: Math.random() * 240,
         y: 0,
-        image: kontra.images.enemy,
+        image: kontra.images.shit,
         dy: 1.6
       }),
       kontra.sprite({
-        x: Math.random() * 256,
+        x: Math.random() * 240,
         y: 0,
-        image: kontra.images.enemy,
+        image: kontra.images.shit,
         dy: 1.7
       }),
       kontra.sprite({
-        x: Math.random() * 256,
+        x: Math.random() * 240,
         y: 0,
-        image: kontra.images.enemy,
+        image: kontra.images.shit,
         dy: 1.8
       }),
       kontra.sprite({
-        x: Math.random() * 256,
+        x: Math.random() * 240,
         y: 0,
-        image: kontra.images.enemy,
+        image: kontra.images.shit,
         dy: 2.0
       }),
       kontra.sprite({
-        x: Math.random() * 256,
+        x: Math.random() * 240,
         y: 0,
-        image: kontra.images.enemy,
+        image: kontra.images.shit,
         dy: 2.2
       }),
       kontra.sprite({
-        x: Math.random() * 256,
+        x: Math.random() * 240,
         y: 0,
-        image: kontra.images.enemy,
+        image: kontra.images.shit,
         dy: 2.4
       }),
       kontra.sprite({
-        x: Math.random() * 256,
+        x: Math.random() * 240,
         y: 0,
-        image: kontra.images.enemy,
+        image: kontra.images.shit,
         dy: 2.6
       }),
       kontra.sprite({
-        x: Math.random() * 256,
+        x: Math.random() * 240,
         y: 0,
-        image: kontra.images.enemy,
+        image: kontra.images.shit,
         dy: 2.8
       })
       
@@ -119,19 +119,19 @@ kontra.loadAssets('background.png', 'enemy.png', 'player.png').then(
         
         player.update();
 
-        //enemy bouncing
-        enemies.forEach(function(enemy){
-          if(enemy.y > 256) {
-            enemy.y = 0;
-            enemy.x = Math.random() * 256
+        //shit bouncing
+        shits.forEach(function(shit){
+          if(shit.y > 256) {
+            shit.y = 0;
+            shit.x = Math.random() * 240
 
           }
 
-          enemy.update();
+          shit.update();
 
 
           //check for collision
-          if(enemy.collidesWith(player)) {
+          if(shit.collidesWith(player)) {
             loop.stop();
             alert('You suck. Restart?');
             window.location = '';
@@ -145,13 +145,14 @@ kontra.loadAssets('background.png', 'enemy.png', 'player.png').then(
       render: function() {
         background.render();
         player.render();
-        enemies.forEach(function(enemy){
-          enemy.render();
+        shits.forEach(function(shit){
+          shit.render();
         });
       }
     });
 
     loop.start();
-
   }
+
+
 );
