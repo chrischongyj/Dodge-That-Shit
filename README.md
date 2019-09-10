@@ -1,6 +1,9 @@
 # Dodge That Shit
 
+UPDATE (11/9) : I GOT ACCEPTED! I'm genuinely so happy as this is probably my first coding competition and I learnt so much about Javascript and HTML5 games! Can't wait to create more complex games in future!
+
 PLAY NOW: https://dodge-that-shit.herokuapp.com/
+Link to js13kGames Page: https://2019.js13kgames.com/entries/dodge-that-shit
 
 This is a game created for the js13kGames 2019 Javascript and HTML5 game development competition. Submissions have to be less than 13kB! Link to competition: https://2019.js13kgames.com/
 
